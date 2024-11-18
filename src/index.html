@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KTJS_2</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xl">
+      <h2 class="text-2xl font-bold text-center mb-6">
+        Bài tập JS Buổi 7-8
+      </h2>
+
+      <!-- Input nhập số -->
+      <div class="flex mb-4">
+        <input
+          type="number"
+          id="inputNumber"
+          placeholder="Nhập số n"
+          class="w-full p-2 border border-gray-300 rounded-l"
+        />
+        <button id="btnThemSo" class="bg-blue-500 text-white p-2 rounded-r">
+          Thêm số
+        </button>
+      </div>
+
+      <!-- Phần hiển thị kết quả -->
+      <div class="bg-green-100 p-4 rounded mb-4">
+        <p id="pResult" class="text-gray-700"></p>
+      </div>
+
+      <!-- Danh sách chức năng -->
+      <div>
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            1. Tổng số dương
+          </summary>
+          <button
+            onclick="btnKetQua(1)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            Tính tổng số dương
+          </button>
+        </details>
+
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            2. Đếm số dương
+          </summary>
+          <button
+            onclick="btnKetQua(2)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            Đếm số dương
+          </button>
+        </details>
+
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            3. Tìm số nhỏ nhất
+          </summary>
+          <button
+            onclick="btnKetQua(3)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            Tìm số nhỏ nhất
+          </button>
+        </details>
+
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            4. Tìm số dương nhỏ nhất
+          </summary>
+
+          <button
+            onclick="btnKetQua(4)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            Tìm số dương nhỏ nhất
+          </button>
+        </details>
+
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            5. Tìm số chẵn cuối cùng
+          </summary>
+          <button
+            onclick="btnKetQua(5)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            Tìm số chẵn cuối cùng
+          </button>
+        </details>
+
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            6. Đổi chỗ 2 vị trí
+          </summary>
+          <button
+            onclick="btnKetQua(6)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            Đổi chỗ 2 giá trị
+          </button>
+        </details>
+
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            7. Sắp xếp mảng tăng dần
+          </summary>
+          <button
+            onclick="btnKetQua(7)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            Sắp xếp tăng dần
+          </button>
+        </details>
+
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            8. Tìm số nguyên tố đầu tiên
+          </summary>
+          <button
+            onclick="btnKetQua(8)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            Tìm số nguyên tố đầu tiên
+          </button>
+        </details>
+
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            9. Đếm số nguyên
+          </summary>
+          <button
+            onclick="btnKetQua(9)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            Đếm số nguyên
+          </button>
+        </details>
+
+        <details class="mb-2">
+          <summary
+            class="cursor-pointer bg-green-100 p-2 rounded text-black font-semibold"
+          >
+            10. So sánh số lượng số âm và dương
+          </summary>
+          <button
+            onclick="btnKetQua(10)"
+            class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+          >
+            So sánh số âm và dương
+          </button>
+        </details>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
